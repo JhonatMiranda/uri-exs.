@@ -1,0 +1,10 @@
+N=int(input())
+for i in range(N):
+    ax,ay,bx,by,cx,cy,dx,dy,rx,ry=map(int,input().split())
+    if ax<=rx and rx<=bx:
+        if ry<=cy and ry>=by:
+            print(1)
+        else:
+            print(0)
+    else:
+        print(0)
