@@ -1,0 +1,5 @@
+vetor=[int(input()) for x in range(20)]
+for i in range(20):
+    print("N[", end="")
+    print(i, end="")
+    print("] =", vetor[19-i])
