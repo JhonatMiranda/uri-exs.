@@ -1,0 +1,6 @@
+C=int(input())
+tempo=0
+for i in range(C):
+    palavra = int(len(input()))
+    tempo=palavra*0.01
+    print("%.2f"%tempo)
