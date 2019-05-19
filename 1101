@@ -1,0 +1,15 @@
+soma=0
+m,n=map(int,input().split())
+while m>0 and n>0:
+    soma=0
+    if m>=n:
+        for i in range(n,m+1):
+            soma+=i
+            print(i,end=" ")
+        print("Sum={}".format(soma))
+    else:
+        for j in range(m,n+1):
+            soma+=j
+            print(j,end=" ")
+        print("Sum={}".format(soma))
+    m,n=map(int,input().split())
