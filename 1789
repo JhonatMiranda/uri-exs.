@@ -1,0 +1,19 @@
+while True:
+    try:
+        n=int(input())
+        vetor=[0 for x in range(n)]
+        vetor=list(map(int,input().split()))
+        for i in range(n):
+            for j in range(1,n-i):
+                if vetor[j]>vetor[j-1]:
+                    aux=vetor[j]
+                    vetor[j]=vetor[j-1]
+                    vetor[j-1]=aux
+        if vetor[0]<10:
+            print("1")
+        elif vetor[0]>=20:
+            print("3")
+        else:
+            print("2")
+    except EOFError:
+        break
