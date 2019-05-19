@@ -1,0 +1,6 @@
+n=int(input())
+contn=0
+while contn<=n:
+    if contn%2==1:
+        print(contn)
+    contn+=1
