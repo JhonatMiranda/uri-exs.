@@ -1,0 +1,7 @@
+A,G,Ra,Rg=map(float,input().split())
+alcool=Ra/A
+gasolina=Rg/G
+if gasolina>=alcool:
+    print("G")
+else:
+    print("A")
