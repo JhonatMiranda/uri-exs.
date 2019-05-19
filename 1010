@@ -1,0 +1,4 @@
+codpeca1,numpeca1,valpeca1=map(float,input().split())
+codpeca2,numpeca2,valpeca2=map(float,input().split())
+valor=(numpeca1*valpeca1)+(numpeca2*valpeca2)
+print("VALOR A PAGAR: R$ {:.2f}".format(valor))
