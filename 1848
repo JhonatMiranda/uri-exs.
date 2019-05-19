@@ -1,0 +1,16 @@
+G=0
+soma=0
+while G<3:
+    entrada = input()
+    if entrada == "caw caw":
+        print(soma)
+        soma = 0
+        G += 1
+    else:
+        E, M, D = list(entrada)
+        if E == '*':
+            soma += 4
+        if M == '*':
+            soma += 2
+        if D == '*':
+            soma += 1
