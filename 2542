@@ -1,0 +1,23 @@
+while True:
+    try:
+        #criar matriz
+        n=int(input())
+        M, L=map(int,input().split())
+        baralhom=[[0 for i in range(n)]for j in range(M)]
+        baralhol=[[0 for i in range(n)] for j in range(L)]
+        #preencher matriz
+        for i in range(M):
+                baralhom[i]=list(map(int,input().split()))
+        for i in range(L):
+                baralhol[i]=list(map(int,input().split()))
+        #percorrer e ver qual o maior atributo
+        CM, CL=map(int,input().split())
+        A=int(input())
+        if baralhom[CM-1][A-1]>baralhol[CL-1][A-1]:
+            print("Marcos")
+        elif baralhol[CL-1][A-1]>baralhom[CM-1][A-1]:
+            print("Leonardo")
+        elif baralhom[CM-1][A-1]==baralhol[CL-1][A-1]:
+            print("Empate")
+    except EOFError:
+        break
