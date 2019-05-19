@@ -1,0 +1,13 @@
+la,lb,lc=map(float,input().split())
+lista=(la,lb,lc)
+ordem=sorted(lista)
+a=max(ordem)
+c=min(ordem)
+newordem=ordem.remove(max(ordem))
+b=max(ordem)
+if a>=b+c:
+    area=((a+b)*c)/2
+    print("Area = %.1f"%area)
+else:
+    perimetro=a+b+c
+    print("Perimetro = %.1f"%perimetro)
