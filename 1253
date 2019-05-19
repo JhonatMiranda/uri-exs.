@@ -1,0 +1,12 @@
+Ct=int(input())
+for i in range(Ct):
+     entrada=input()
+     N=int(input())
+     for j in range(len(entrada)):
+         x=ord(entrada[j])
+         if x-N>65 or x-N==65:
+            y=x-N
+         else:
+            y=(x-N)+26
+         print(chr(y),end='')
+     print()
