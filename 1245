@@ -1,0 +1,20 @@
+while True:
+    try:
+        N=int(input())
+        contde=[[0 for i in range(2)]for j in range(31)]
+        for i in range(N):
+            M, L= input().split()
+            M=int(M)-30
+            if L=='D':
+                contde[M][0]+=1
+            else:
+                contde[M][1]+=1
+        par=0
+        for i in range(31):
+            if contde[i][0]>contde[i][1]:
+                par+=contde[i][1]
+            else:
+                par+=contde[i][0]
+        print(par)
+    except:
+        break
