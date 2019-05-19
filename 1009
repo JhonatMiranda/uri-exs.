@@ -1,0 +1,5 @@
+vendedor=str(input())
+salfixo=float(input())
+tvendas=float(input())
+sfmes=salfixo+(tvendas*0.15)
+print("TOTAL = R$ {:.2f}".format(sfmes))
