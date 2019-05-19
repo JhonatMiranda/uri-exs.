@@ -1,0 +1,12 @@
+contdistancia=0
+somadistancia=0
+while True:
+    try:
+        nome=str(input())
+        distancia=int(input())
+        contdistancia+=1
+        somadistancia+=distancia
+    except EOFError:
+        break
+media=somadistancia/contdistancia
+print("{:.1f}".format(media))
