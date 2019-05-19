@@ -1,0 +1,7 @@
+idtdias=int(input())
+idanos=idtdias//365
+idmeses=idtdias%365//30
+iddias=idtdias%365%30
+print(idanos,"ano(s)")
+print(idmeses,"mes(es)")
+print(iddias,"dia(s)")
