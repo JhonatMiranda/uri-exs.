@@ -1,0 +1,6 @@
+nfun=int(input())
+horat=int(input())
+vhora=float(input())
+salario=horat*vhora
+print("NUMBER =",nfun)
+print("SALARY = U$ %.2f"%salario)
