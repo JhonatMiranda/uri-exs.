@@ -1,0 +1,4 @@
+A,B,C=map(int,input().split())
+maiorab=(A+B+abs(A-B))/2
+maiorabc=(maiorab+C+abs(maiorab-C))/2
+print("{:.0f}".format(maiorabc),"eh o maior")
