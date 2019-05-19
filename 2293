@@ -1,0 +1,17 @@
+n,m=map(int,input().split())
+matriz=[list(map(int,input().split()))for i in range(n)]
+somalinha=0
+somacoluna=0
+somamaior=0
+for i in range(n):
+    for j in range(m):
+        somalinha+=matriz[i][j]
+        for k in range(n):
+            somacoluna+=matriz[k][j]
+        if somacoluna>somamaior:
+            somamaior=somacoluna
+        somacoluna=0
+    if somalinha>somamaior:
+        somamaior=somalinha
+    somalinha=0
+print(somamaior)
