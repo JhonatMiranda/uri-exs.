@@ -1,0 +1,10 @@
+vetor=[0 for x in range(10)]
+inicial=int(input())
+for i in range(10):
+    if i==0:
+        vetor[i]=inicial
+    else:
+        vetor[i]=(vetor[i-1]*2)
+    print("N[",end="")
+    print(i,end="")
+    print("] =",vetor[i])
