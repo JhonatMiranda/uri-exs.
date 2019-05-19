@@ -1,0 +1,6 @@
+vetor=[float(input()) for x in range(100)]
+for i in range(100):
+    if vetor[i]<=10:
+        print("A[",end="")
+        print(i,end="")
+        print("] =",vetor[i])
