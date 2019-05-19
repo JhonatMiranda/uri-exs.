@@ -1,0 +1,9 @@
+la,lb=map(int,input().split())
+lista=(la,lb)
+ordem=sorted(lista)
+a=max(ordem)
+b=min(ordem)
+if a%b==0:
+    print("Sao Multiplos")
+else:
+    print("Nao sao Multiplos")
