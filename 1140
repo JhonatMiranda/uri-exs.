@@ -1,0 +1,17 @@
+while True:
+    entrada=input()
+    if entrada=='*':
+        break
+    else:
+        entrada=entrada.split()
+        vetor=[0 for x in range(len(entrada))]
+        for i in range(len(entrada)):
+            vetor[i]=entrada[i][0].upper()
+        s=1
+        for i in range(1,len(entrada)):
+            if vetor[i]==vetor[0]:
+                s+=1
+        if s==len(entrada):
+            print("Y")
+        else:
+            print("N")
