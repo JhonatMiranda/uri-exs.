@@ -1,0 +1,23 @@
+a,b,c,d=map(int,input().split())
+if a==c and b==d:
+    print("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)")
+else:
+    if a<c:
+        if b<d:
+            print("O JOGO DUROU",(a-c)*(-1),"HORA(S) E",d-b,"MINUTO(S)")
+        else:
+            if (60-b)+d==60:
+               print("O JOGO DUROU",((a-c)*(-1)),"HORA(S) E 0 MINUTO(S)")
+            else:
+                print("O JOGO DUROU",((a-c)*(-1))-1,"HORA(S) E",(60-b)+d,"MINUTO(S)")
+    else:
+        if b<d:
+            if a==c:
+                print("O JOGO DUROU 0 HORA(S) E",d-b,"MINUTO(S)")
+            else:
+                print("O JOGO DUROU",(24-a)+c,"HORA(S) E",d-b,"MINUTO(S)")
+        else:
+            if (60-b)+d==60:
+                print("O JOGO DUROU",(24-a)+(c),"HORAS E 0 MINUTOS")
+            else:
+                print("O JOGO DUROU",(24-a)+(c-1),"HORA(S) E",(60-b)+d,"MINUTO(S)")
