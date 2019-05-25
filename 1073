@@ -1,0 +1,6 @@
+num=int(input())
+quant=0
+while quant<num:
+    quant+=2
+    print(quant,end="")
+    print("^2 =",quant**2)
