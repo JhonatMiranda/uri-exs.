@@ -1,0 +1,5 @@
+lista=["January","February","March","April","May","June","July","August","September","October","November","December"]
+num=int(input())
+for i in range(0,13):
+    if num==i:
+        print(lista[i-1])
