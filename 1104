@@ -1,0 +1,13 @@
+while True:
+    a=input().split()
+    if a[0]==a[1]=='0':
+        break
+    else:
+        cardsa=[int(x) for x in input().split()]
+        cardsb=[int(x) for x in input().split()]
+        cardsA=set(cardsa)
+        cardsB=set(cardsb)
+        d=[[],[]]
+        d[0]=len(cardsA.difference(cardsB))
+        d[1]=len(cardsB.difference(cardsA))
+        print(min(d))
