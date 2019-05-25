@@ -1,0 +1,11 @@
+num=int(input())
+dentro=0
+fora=0
+for i in range(num):
+    numero=int(input())
+    if numero>9 and numero<21:
+        dentro+=1
+    else:
+        fora+=1
+print(dentro,"in")
+print(fora,"out")
