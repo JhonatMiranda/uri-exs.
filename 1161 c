@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int x,y;
+    while (scanf("%d %d",&x,&y) != EOF){
+        long long fat1, fat2, fat;
+        int i, j;
+        fat1 = fat2 = 1;
+        for (i=1;i<=x;i++){
+            fat1*=i;
+        }
+        for (j=1;j<=y;j++){
+            fat2*=j;
+        }
+        fat = fat1+fat2;
+        printf("%llu\n",fat);
+    }
+    return 0;
+}
