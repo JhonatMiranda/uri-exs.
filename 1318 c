@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main(){
+    int n,m;
+    scanf("%d %d",&n,&m);
+    while (n!=0){
+        int i,vet[m];
+        for (i=0;i<m;i++){
+            scanf("%d",&vet[i]);
+        }
+        int l,p,aux;
+        for (l=0;l<m;l++){
+            for (p=1;p<m-l;p++){
+                if (vet[p]<vet[p-1]){
+                    aux=vet[p];
+                    vet[p]=vet[p-1];
+                    vet[p-1]=aux;
+                }
+            }
+        }
+        int j,cont=0,aux2,k,aux3;
+        for (j=0;j<m;j++){
+            if (j==0){
+                if (vet[0]==vet[1]){
+                    cont++;
+                }
+            }
+            if (j!=0){
+                if (vet[j]==vet[j+1]){
+                    if (vet[j]!=vet[j-1]){
+                        cont++;
+                    }
+                }
+            }
+        }
+        printf("%d\n",cont);
+        scanf("%d %d",&n,&m);
+    }
+    return 0;
+}
