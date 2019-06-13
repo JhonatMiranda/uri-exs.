@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    float a,b,c,r1,r2;
+    int rt;
+    scanf("%f",&a);
+    scanf("%f %f",&b,&c);
+    while (a!=0){
+        r1=a*b*c;
+        r2=c-a;
+        rt=floor(r1/r2);
+        if (rt==1){
+            printf("%d ",rt);
+            printf("pagina\n");
+        }
+        else{
+            printf("%d ",rt);
+            printf("paginas\n");
+        }
+        scanf("%f",&a);
+        if (a==0){
+            return 0;
+        }
+        scanf("%f %f",&b,&c);
+    }
+    return 0;
+}
